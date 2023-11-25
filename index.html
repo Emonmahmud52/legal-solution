@@ -32,8 +32,7 @@
           theme: {
             extend: {
               colors: {
-                'gradient-start': '#FF8938',
-                'gradient-end': '#F00',
+                'primary-bg': '#B68C5A',
               }
             }
           }
@@ -42,21 +41,21 @@
 
 </head>
 <body>
-    <header class="container mx-auto">
+    <header class="container mx-auto px-5 md:px-10 lg:px-0">
         <!-- Navbar Start -->
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 flex-col gap-5 md:flex-row lg:flex-row">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#707070] font-poppins">
                       <li><a>Home</a></li>
-                      <li><a>Services</a></li>
-                      <li><a>Cases</a></li>
-                      <li><a>Blog</a></li>
-                      <li><a>Contact Us</a></li>
+                      <li><a>Services<i class="fa-solid fa-chevron-right"></i></a></li>
+                      <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                      <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                      <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
                     </ul>
                   </div>
                   <a class="btn btn-ghost text-xl">
@@ -64,19 +63,37 @@
                   </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
+                  <ul class="menu menu-horizontal px-1 text-[#707070] font-poppins">
                     <li><a>Home</a></li>
-                      <li><a>Services</a></li>
-                      <li><a>Cases</a></li>
-                      <li><a>Blog</a></li>
-                      <li><a>Contact Us</a></li>
+                      <li ><a>Services<i class="fa-solid fa-chevron-right"></i></a></li>
+                      <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                      <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                      <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn">Free Consultation</a>
+                  <a class="btn bg-primary-bg text-white font-poppins lg:text-lg font-semibold">Free Consultation</a>
                 </div>
               </div>
         </nav>
+        <!-- navbar End -->
+        <!-- Banner Section Start -->
+        <div class="hero my-8" style="background-image: url(images/banner.png);">
+          <div class="hero-overlay"></div>
+          <div class="hero-content text-center text-white">
+            <div class="max-w-2xl py-20">
+              <h1 class="mb-5 text-4xl md:text-6xl lg:text-7xl font-extrabold font-garamond">We Provide Effective Legal Solutions</h1>
+              <p class="mb-5 text-[#E7E7E7] font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <form action="">
+                <input type="search" placeholder="Search your services" class="px-3 py-3 rounded w-8/12"/> 
+                <button class="btn bg-primary-bg text-white border-none px-6 text-xl font-semibold">Search</button>
+              </form>
+                
+              
+            </div>
+          </div>
+        </div>
+        <!-- Banner Section End -->
     </header>
     <main>
 
